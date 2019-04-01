@@ -104,3 +104,98 @@ body{
 .login-transparent-box a:hover{
     color: #e7463c;
 }
+
+/* [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[ SNAKE ICONS ]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]] */
+.snake-icon-list{
+    padding: 0;
+    display: flex;
+}
+
+.snake-icon-list .snake-icon{
+    list-style: none;
+    padding: 10px;
+}
+
+.snake-icon-list .snake-icon a{
+    display: block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    transition: .5s;
+}
+
+.snake-icon-list .snake-icon a img{
+    margin-top: 15px;
+    height: 50px;
+    width: 50px;
+}
+
+.snake-icon-list .snake-icon a span{
+    position: absolute;
+    transition: transform .5s;
+}
+
+.snake-icon-list .snake-icon a span:nth-child(1),
+.snake-icon-list .snake-icon a span:nth-child(3){
+    width: 100%;
+    height: 1px;
+    background: #262626;
+}
+
+.snake-icon-list .snake-icon a span:nth-child(1){
+    top: 0;
+    left: 0;
+    transform-origin: right;
+}
+
+.snake-icon-list .snake-icon a:hover span:nth-child(1){
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .5s;
+}
+
+.snake-icon-list .snake-icon a span:nth-child(3){
+    bottom: 0;
+    left: 0;
+    transform-origin: left;
+}
+
+.snake-icon-list .snake-icon a:hover span:nth-child(3){
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .5s;
+}
+
+.snake-icon-list .snake-icon a span:nth-child(2),
+.snake-icon-list .snake-icon a span:nth-child(4){
+    height: 100%;
+    width: 1px;
+    background: #262626;
+}
+
+.snake-icon-list .snake-icon a span:nth-child(2){
+    top: 0;
+    left: 0;
+    transform: scaleY(0);
+    transform-origin: bottom;
+}
+
+.snake-icon-list .snake-icon a:hover span:nth-child(2){
+    transform: scaleY(1);
+    transform-origin: top;
+    transition: transform .5s;
+}
+
+.snake-icon-list .snake-icon a span:nth-child(4){
+    top: 0;
+    right: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+}
+
+.snake-icon-list .snake-icon a:hover span:nth-child(4){
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform .5s;
+}
