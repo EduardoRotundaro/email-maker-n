@@ -9,5 +9,98 @@ font-family: 'Titillium Web', sans-serif;
 
 /* [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[ STRUCTURE ]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]] */
 body{
-    font-family: 'Titillium Web', sans-serif; 
+    padding: 0;
+    margin: 0;
+}
+
+/* [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[ LOGIN ]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]] */
+.login-body{
+    background-image: url("../images/bg-login.png");
+    font-family: tahoma;
+    height: 100vh;
+    width: 100vw;
+}
+
+.login-transparent-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:  translate(-50%, -50%);
+    width: 350px;
+    height: 420px;
+    padding: 80px 40px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, .5);
+}
+
+.login-circle-logo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: calc(-100px/2);
+    left: calc(50% - 50px);
+    box-shadow: 0 0 10px #000000;
+    background: rgba(253, 254, 254, .9);   
+}
+
+.login-title{
+    margin: 0;
+    padding: 0 0 20px;
+    color: #f15046;
+    text-align: center;
+}
+
+.login-transparent-box p {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.login-transparent-box input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.login-transparent-box input[type="text"], .login-transparent-box input[type="password"]{
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+::placeholder{
+    color: rgba(255, 255, 255, .5);
+}
+
+.login-transparent-box input[type="submit"]:hover{
+    background: #d33228;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.login-transparent-box input[type="submit"]{
+    background: #e7463c;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+    border-style: none;
+    box-shadow: 0 0 5px #000000;
+}
+
+.login-transparent-box a{
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.login-transparent-box a:hover{
+    color: #e7463c;
 }
